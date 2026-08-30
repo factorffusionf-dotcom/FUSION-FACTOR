@@ -213,7 +213,7 @@ export default function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1], delay: 0.22 }}
                 whileHover={{ scale: 1.01 }}
-                className="text-[80px] xs:text-[80px] sm:text-[80px] md:text-[92px] lg:text-[123px] xl:text-[134.4px] font-black uppercase factor-split factor-outline leading-[0.82] tracking-tighter"
+                className="text-[100px] xs:text-[100px] sm:text-[100px] md:text-[92px] lg:text-[123px] xl:text-[134.4px] font-black uppercase factor-split factor-outline leading-[0.82] tracking-tighter"
               >
                 FACTOR
               </motion.h1>
