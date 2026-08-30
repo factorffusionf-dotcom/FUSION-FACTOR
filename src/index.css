@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.tech-heading {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Half-white text effect for FACTOR - smooth and clean with no dividing/shadow line */
+.factor-split {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 30%, rgba(255, 255, 255, 0.55) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Very thin neon blue outline & subtle glow for FUSION */
+.fusion-outline {
+  -webkit-text-stroke: 0.75px #60a5fa;
+  text-shadow: 0 0 8px rgba(59, 130, 246, 0.45), 0 0 16px rgba(37, 99, 235, 0.2);
+}
+
+/* Very thin white outline & delicate glow for FACTOR */
+.factor-outline {
+  -webkit-text-stroke: 0.65px rgba(255, 255, 255, 0.85);
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.35));
+}
+
+/* Category box from Artistic Flair */
+.cat-box {
+  border-left: 4px solid #3b82f6;
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
+}
+
+.cat-box:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-left-color: #60a5fa;
+  transform: translateX(4px);
+  box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.15);
+}
+
