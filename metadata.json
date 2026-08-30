@@ -1,0 +1,8 @@
+{
+  "name": "FUSION FACTOR",
+  "description": "FUSION FACTOR - Evaluate Your Gigital Experience. Enterprise laptops, desktop PCs, laser printers, and IT hardware catalog in Karachi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
