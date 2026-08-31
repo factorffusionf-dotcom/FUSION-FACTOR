@@ -48,8 +48,12 @@ export default function Footer() {
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div className="min-w-0">
-              <div className="text-xs font-bold uppercase tracking-wider text-white">Grade A+ Stock</div>
-              <div className="text-[11px] text-slate-400 truncate">100% Bench Tested Hardware</div>
+              <div className="text-xs font-bold uppercase tracking-wider text-white">
+                Grade A+ Stock
+              </div>
+              <div className="text-[11px] text-slate-400 truncate">
+                100% Bench Tested Hardware
+              </div>
             </div>
           </div>
 
@@ -58,8 +62,12 @@ export default function Footer() {
               <WhatsAppIcon className="w-5 h-5" />
             </div>
             <div className="min-w-0">
-              <div className="text-xs font-bold uppercase tracking-wider text-white">Fast WhatsApp Support</div>
-              <div className="text-[11px] text-slate-400 truncate">Instant Model Inquiries</div>
+              <div className="text-xs font-bold uppercase tracking-wider text-white">
+                Fast WhatsApp Support
+              </div>
+              <div className="text-[11px] text-slate-400 truncate">
+                Instant Model Inquiries
+              </div>
             </div>
           </div>
 
@@ -68,8 +76,12 @@ export default function Footer() {
               <Cpu className="w-5 h-5" />
             </div>
             <div className="min-w-0">
-              <div className="text-xs font-bold uppercase tracking-wider text-white">Laptops, PCs &amp; Parts</div>
-              <div className="text-[11px] text-slate-400 truncate">Complete Enterprise Range</div>
+              <div className="text-xs font-bold uppercase tracking-wider text-white">
+                Laptops, PCs &amp; Parts
+              </div>
+              <div className="text-[11px] text-slate-400 truncate">
+                Complete Enterprise Range
+              </div>
             </div>
           </div>
 
@@ -78,19 +90,24 @@ export default function Footer() {
               <Clock className="w-5 h-5" />
             </div>
             <div className="min-w-0">
-              <div className="text-xs font-bold uppercase tracking-wider text-white">Naz Plaza, Saddar</div>
-              <div className="text-[11px] text-slate-400 truncate">11:00 AM – 9:00 PM Daily</div>
+              <div className="text-xs font-bold uppercase tracking-wider text-white">
+                Naz Plaza, Saddar
+              </div>
+              <div className="text-[11px] text-slate-400 truncate">
+                11:00 AM – 9:00 PM Daily
+              </div>
             </div>
           </div>
         </div>
 
         {/* Main Footer Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10 pb-12">
-          {/* Column 1: Brand Info & Owner (4 cols) */}
+          {/* Column 1: Brand Info & Owner */}
           <div className="lg:col-span-4 flex flex-col gap-4">
             <div className="flex items-center gap-3.5 sm:gap-4">
               <div className="relative shrink-0 group">
                 <div className="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-sky-500/30 to-blue-600/30 blur-sm group-hover:blur-md transition-all pointer-events-none" />
+
                 <img
                   id="footer-brand-logo"
                   src={fusionFactorLogo}
@@ -101,19 +118,30 @@ export default function Footer() {
                   referrerPolicy="no-referrer"
                 />
               </div>
+
               <div className="flex flex-col gap-0.5">
                 <div className="text-2xl sm:text-3xl font-black tracking-tight text-white flex items-center gap-2">
-                  <span className="text-sky-400 font-extrabold tracking-wider">FUSION</span>
-                  <span className="factor-split font-black tracking-wider">FACTOR</span>
+                  <span className="text-sky-400 font-extrabold tracking-wider">
+                    FUSION
+                  </span>
+
+                  <span className="factor-split font-black tracking-wider">
+                    FACTOR
+                  </span>
                 </div>
-                <p className="text-xs sm:text-sm font-semibold text-sky-400 tracking-wide">
-                  Evaluate Your Gigital Experience
+
+                {/* Updated Slogan */}
+                <p className="text-xs sm:text-sm font-semibold tracking-wide flex items-center gap-2">
+                  <span className="text-sky-400">Evaluate Your</span>
+                  <span className="text-white">Digital Experience</span>
                 </p>
               </div>
             </div>
 
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-              Your premier technology destination in Karachi for enterprise laptops, high-performance desktop PCs, laser multi-function printers, storage upgrades, and certified IT accessories.
+              Your premier technology destination in Karachi for enterprise
+              laptops, high-performance desktop PCs, laser multi-function
+              printers, storage upgrades, and certified IT accessories.
             </p>
 
             {/* Business & Owner Card */}
@@ -121,14 +149,17 @@ export default function Footer() {
               <div className="w-10 h-10 rounded-lg bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 shrink-0">
                 <User className="w-5 h-5" />
               </div>
+
               <div className="min-w-0">
                 <div className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
                   Business Owner
                 </div>
+
                 <div className="text-sm font-black text-white truncate">
                   {ownerName}
                 </div>
               </div>
+
               <div className="ml-auto">
                 <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center gap-1">
                   <CheckCircle2 className="w-3 h-3" /> Verified
@@ -137,14 +168,14 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Direct Contact Information (3 cols) */}
+          {/* Column 2: Direct Contact Information */}
           <div className="lg:col-span-3 flex flex-col gap-4">
             <h4 className="text-xs font-black uppercase tracking-widest text-slate-300 flex items-center gap-2 border-l-2 border-sky-500 pl-2.5">
               <span>Contact Information</span>
             </h4>
 
             <ul className="flex flex-col gap-3 text-xs sm:text-sm text-slate-300">
-              {/* WhatsApp (Clickable) */}
+              {/* WhatsApp */}
               <li>
                 <a
                   id="footer-link-whatsapp"
@@ -158,17 +189,22 @@ export default function Footer() {
                   <div className="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-400 group-hover:scale-105 transition-transform shrink-0">
                     <WhatsAppIcon className="w-4 h-4" />
                   </div>
+
                   <div className="flex flex-col min-w-0">
-                    <span className="text-[10px] uppercase font-bold text-slate-400">WhatsApp Chat</span>
+                    <span className="text-[10px] uppercase font-bold text-slate-400">
+                      WhatsApp Chat
+                    </span>
+
                     <span className="font-semibold text-emerald-300 group-hover:text-emerald-200 truncate">
                       {whatsappDisplay}
                     </span>
                   </div>
+
                   <ArrowUpRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-emerald-400 ml-auto shrink-0 transition-colors" />
                 </a>
               </li>
 
-              {/* Direct Phone Call (Clickable) */}
+              {/* Direct Phone Call */}
               <li>
                 <a
                   id="footer-link-phone"
@@ -178,17 +214,22 @@ export default function Footer() {
                   <div className="w-8 h-8 rounded-lg bg-sky-500/10 border border-sky-500/25 flex items-center justify-center text-sky-400 group-hover:scale-105 transition-transform shrink-0">
                     <Phone className="w-4 h-4" />
                   </div>
+
                   <div className="flex flex-col min-w-0">
-                    <span className="text-[10px] uppercase font-bold text-slate-400">Contact Number</span>
+                    <span className="text-[10px] uppercase font-bold text-slate-400">
+                      Contact Number
+                    </span>
+
                     <span className="font-semibold text-white group-hover:text-sky-300 truncate">
                       {phoneNumber}
                     </span>
                   </div>
+
                   <ArrowUpRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-sky-400 ml-auto shrink-0 transition-colors" />
                 </a>
               </li>
 
-              {/* Email Address (Clickable mailto:) */}
+              {/* Email Address */}
               <li>
                 <a
                   id="footer-link-email"
@@ -198,19 +239,24 @@ export default function Footer() {
                   <div className="w-8 h-8 rounded-lg bg-blue-500/10 border border-blue-500/25 flex items-center justify-center text-blue-400 group-hover:scale-105 transition-transform shrink-0">
                     <Mail className="w-4 h-4" />
                   </div>
+
                   <div className="flex flex-col min-w-0">
-                    <span className="text-[10px] uppercase font-bold text-slate-400">Email Inquiry</span>
+                    <span className="text-[10px] uppercase font-bold text-slate-400">
+                      Email Inquiry
+                    </span>
+
                     <span className="font-medium text-slate-200 group-hover:text-white truncate break-all">
                       {emailAddress}
                     </span>
                   </div>
+
                   <ArrowUpRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-blue-400 ml-auto shrink-0 transition-colors" />
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Column 3: Shop Address & Timing (3 cols) */}
+          {/* Column 3: Shop Address & Timing */}
           <div className="lg:col-span-3 flex flex-col gap-4">
             <h4 className="text-xs font-black uppercase tracking-widest text-slate-300 flex items-center gap-2 border-l-2 border-purple-500 pl-2.5">
               <span>Location &amp; Timings</span>
@@ -228,11 +274,16 @@ export default function Footer() {
                 <div className="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/25 flex items-center justify-center text-purple-400 shrink-0 mt-0.5 group-hover:scale-105 transition-transform">
                   <MapPin className="w-4 h-4" />
                 </div>
+
                 <div className="flex flex-col min-w-0">
-                  <span className="text-[10px] uppercase font-bold text-slate-400">Shop Address</span>
+                  <span className="text-[10px] uppercase font-bold text-slate-400">
+                    Shop Address
+                  </span>
+
                   <p className="text-xs font-semibold text-white group-hover:text-purple-300 leading-snug mt-0.5">
                     {shopAddress}
                   </p>
+
                   <span className="text-[10px] text-purple-400 font-medium flex items-center gap-1 mt-1">
                     Open in Maps <ArrowUpRight className="w-3 h-3" />
                   </span>
@@ -244,11 +295,16 @@ export default function Footer() {
                 <div className="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/25 flex items-center justify-center text-amber-400 shrink-0 mt-0.5">
                   <Clock className="w-4 h-4" />
                 </div>
+
                 <div className="flex flex-col min-w-0">
-                  <span className="text-[10px] uppercase font-bold text-slate-400">Shop Timings</span>
+                  <span className="text-[10px] uppercase font-bold text-slate-400">
+                    Shop Timings
+                  </span>
+
                   <span className="text-xs font-bold text-amber-300 mt-0.5">
                     {shopTiming}
                   </span>
+
                   <span className="text-[10px] text-slate-400 font-medium mt-0.5">
                     Open Monday through Sunday
                   </span>
@@ -257,7 +313,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 4: Official Social Media & Connect (2 cols) */}
+          {/* Column 4: Official Social Media */}
           <div className="lg:col-span-2 flex flex-col gap-4">
             <h4 className="text-xs font-black uppercase tracking-widest text-slate-300 flex items-center gap-2 border-l-2 border-emerald-500 pl-2.5">
               <span>Follow Us</span>
@@ -279,12 +335,17 @@ export default function Footer() {
                 <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-amber-500 via-pink-500 to-purple-600 flex items-center justify-center text-white shrink-0 group-hover:scale-105 transition-transform shadow-md">
                   <InstagramIcon className="w-4 h-4" />
                 </div>
+
                 <div className="flex flex-col min-w-0">
-                  <span className="text-[9px] uppercase font-bold text-slate-400">Instagram</span>
+                  <span className="text-[9px] uppercase font-bold text-slate-400">
+                    Instagram
+                  </span>
+
                   <span className="text-xs font-bold text-pink-300 group-hover:text-pink-200 truncate">
                     @official_fusionfactor
                   </span>
                 </div>
+
                 <ArrowUpRight className="w-3.5 h-3.5 text-pink-400 ml-auto shrink-0 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </a>
 
@@ -299,12 +360,17 @@ export default function Footer() {
                 <div className="w-8 h-8 rounded-lg bg-black border border-white/20 flex items-center justify-center text-white shrink-0 group-hover:scale-105 transition-transform shadow-md">
                   <TikTokIcon className="w-4 h-4 text-cyan-400" />
                 </div>
+
                 <div className="flex flex-col min-w-0">
-                  <span className="text-[9px] uppercase font-bold text-slate-400">TikTok</span>
+                  <span className="text-[9px] uppercase font-bold text-slate-400">
+                    TikTok
+                  </span>
+
                   <span className="text-xs font-bold text-cyan-300 group-hover:text-cyan-200 truncate">
                     @official_fusionfactor
                   </span>
                 </div>
+
                 <ArrowUpRight className="w-3.5 h-3.5 text-cyan-400 ml-auto shrink-0 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </a>
             </div>
@@ -315,14 +381,22 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-3 gap-y-1">
             <span className="text-slate-300 font-semibold">
-              © {new Date().getFullYear()} <strong className="text-white font-bold">FUSION FACTOR</strong>. All Rights Reserved.
+              © {new Date().getFullYear()}{" "}
+              <strong className="text-white font-bold">FUSION FACTOR</strong>.
+              All Rights Reserved.
             </span>
+
             <span className="text-slate-600 hidden sm:inline">•</span>
-            <span className="text-slate-400">Owner: <strong className="text-slate-200">{ownerName}</strong></span>
+
+            <span className="text-slate-400">
+              Owner:{" "}
+              <strong className="text-slate-200">{ownerName}</strong>
+            </span>
           </div>
 
-          <div className="flex items-center gap-4 text-xs font-medium text-slate-400">
-            <span className="text-sky-400 font-bold">Evaluate Your Gigital Experience</span>
+          <div className="flex items-center gap-2 text-xs font-medium">
+            <span className="text-sky-400 font-bold">Evaluate Your</span>
+            <span className="text-white font-bold">Digital Experience</span>
           </div>
         </div>
       </div>
