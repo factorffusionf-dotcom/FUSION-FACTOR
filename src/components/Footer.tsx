@@ -7,8 +7,6 @@ import {
   ShieldCheck,
   Cpu,
   ArrowUpRight,
-  Sparkles,
-  Layers,
   Laptop,
   CheckCircle2,
 } from "lucide-react";
@@ -22,7 +20,7 @@ export default function Footer() {
   const phoneTel = "03029695124";
   const emailAddress = "officialfusionfactor1@gmail.com";
   const shopAddress = "Shop G-98 Gate # 08, Naz Plaza, Saddar, Karachi";
-  const shopTiming = "11:00 AM – 9:00 PM";
+  const shopTiming = "12:00 AM – 9:00 PM";
   const ownerName = "Saad Arshad";
   const instagramUrl = "https://www.instagram.com/official_fusionfactor/";
   const tiktokUrl = "https://www.tiktok.com/@official_fusionfactor";
@@ -42,59 +40,54 @@ export default function Footer() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-12 pt-14 pb-10">
         {/* Top Feature Highlights Bar */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 pb-10 mb-10 border-b border-white/10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 pb-10 mb-10 border-b border-white/10">
+          {/* Grade A+ Stock */}
           <div className="flex items-center gap-3 p-3 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-blue-500/30 transition-all">
             <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/25 flex items-center justify-center text-sky-400 shrink-0">
               <ShieldCheck className="w-5 h-5" />
             </div>
+
             <div className="min-w-0">
               <div className="text-xs font-bold uppercase tracking-wider text-white">
                 Grade A+ Stock
               </div>
+
               <div className="text-[11px] text-slate-400 truncate">
                 100% Bench Tested Hardware
               </div>
             </div>
           </div>
 
+          {/* Fast WhatsApp Support */}
           <div className="flex items-center gap-3 p-3 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-blue-500/30 transition-all">
             <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-400 shrink-0">
               <WhatsAppIcon className="w-5 h-5" />
             </div>
+
             <div className="min-w-0">
               <div className="text-xs font-bold uppercase tracking-wider text-white">
                 Fast WhatsApp Support
               </div>
+
               <div className="text-[11px] text-slate-400 truncate">
                 Instant Model Inquiries
               </div>
             </div>
           </div>
 
+          {/* Laptops, PCs & Parts */}
           <div className="flex items-center gap-3 p-3 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-blue-500/30 transition-all">
             <div className="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/25 flex items-center justify-center text-purple-400 shrink-0">
               <Cpu className="w-5 h-5" />
             </div>
+
             <div className="min-w-0">
               <div className="text-xs font-bold uppercase tracking-wider text-white">
                 Laptops, PCs &amp; Parts
               </div>
+
               <div className="text-[11px] text-slate-400 truncate">
                 Complete Enterprise Range
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-3 p-3 sm:p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-blue-500/30 transition-all">
-            <div className="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/25 flex items-center justify-center text-amber-400 shrink-0">
-              <Clock className="w-5 h-5" />
-            </div>
-            <div className="min-w-0">
-              <div className="text-xs font-bold uppercase tracking-wider text-white">
-                Naz Plaza, Saddar
-              </div>
-              <div className="text-[11px] text-slate-400 truncate">
-                11:00 AM – 9:00 PM Daily
               </div>
             </div>
           </div>
@@ -120,7 +113,8 @@ export default function Footer() {
               </div>
 
               <div className="flex flex-col gap-0.5">
-                <div className="text-2xl sm:text-3xl font-black tracking-tight text-white flex items-center gap-2">
+                {/* FUSION FACTOR - Entire Heading Blue */}
+                <div className="text-2xl sm:text-3xl font-black tracking-tight flex items-center gap-2">
                   <span className="text-sky-400 font-extrabold tracking-wider">
                     FUSION
                   </span>
@@ -130,10 +124,15 @@ export default function Footer() {
                   </span>
                 </div>
 
-                {/* Updated Slogan */}
+                {/* Slogan - Entirely White */}
                 <p className="text-xs sm:text-sm font-semibold tracking-wide flex items-center gap-2">
-                  <span className="text-white">Evaluate Your</span>
-                  <span className="text-white">Digital Experience</span>
+                  <span className="text-white">
+                    Elevate Your
+                  </span>
+
+                  <span className="text-white">
+                    Digital Experience
+                  </span>
                 </p>
               </div>
             </div>
@@ -394,9 +393,12 @@ export default function Footer() {
             </span>
           </div>
 
+          {/* Bottom Slogan - Entirely White */}
           <div className="flex items-center gap-2 text-xs font-medium">
-            <span className="text-white font-bold">Evaluate Your</span>
-            <span className="text-white font-bold">Digital Experience</span>
+            <span className="text-white font-bold">Elevate Your</span>
+            <span className="text-white font-bold">
+              Digital Experience
+            </span>
           </div>
         </div>
       </div>
