@@ -125,14 +125,14 @@ export default function Footer() {
                     FUSION
                   </span>
 
-                  <span className="factor-split font-black tracking-wider">
+                  <span className="text-sky-400 font-black tracking-wider">
                     FACTOR
                   </span>
                 </div>
 
                 {/* Updated Slogan */}
                 <p className="text-xs sm:text-sm font-semibold tracking-wide flex items-center gap-2">
-                  <span className="text-sky-400">Evaluate Your</span>
+                  <span className="text-white">Evaluate Your</span>
                   <span className="text-white">Digital Experience</span>
                 </p>
               </div>
@@ -395,7 +395,7 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-2 text-xs font-medium">
-            <span className="text-sky-400 font-bold">Evaluate Your</span>
+            <span className="text-white font-bold">Evaluate Your</span>
             <span className="text-white font-bold">Digital Experience</span>
           </div>
         </div>
