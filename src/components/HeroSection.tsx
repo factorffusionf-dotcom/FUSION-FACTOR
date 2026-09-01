@@ -372,7 +372,7 @@ export default function HeroSection() {
               GLOBAL SEARCH BAR
               Positioned ABOVE FUSION FACTOR
               ===================================================== */}
-          <div className="w-full flex justify-center px-1">
+          <div className="w-full flex justify-center px-1 -translate-x-[1%] -translate-y-[4%] scale-[0.99]">
             <GlobalSearchBar
               onSelect={handleGlobalProductSelect}
             />
