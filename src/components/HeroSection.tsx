@@ -133,18 +133,14 @@ function CategoryCard({
       }}
       className={`cat-box px-2.5 sm:px-3 md:px-4 py-3 sm:py-3.5 md:py-4 cursor-pointer relative overflow-hidden group rounded-lg sm:rounded-xl flex items-center justify-center text-center ${cat.spanClass}`}
     >
-      {/* Interactive Subtle Ethereal Glow */}
       <div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.32),transparent_70%)]" />
 
-      {/* Gentle Luminous Shimmer Light Sweep */}
       <div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-300/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
 
-        {/* Soft luminous inner border accent */}
         <div className="absolute inset-0 border border-blue-400/30 rounded-lg sm:rounded-xl pointer-events-none" />
       </div>
 
-      {/* Category Title */}
       <motion.h2
         id={`category-text-${cat.name.toLowerCase()}`}
         initial={{
@@ -173,20 +169,17 @@ export default function HeroSection() {
   const [activeServiceModal, setActiveServiceModal] =
     useState<HeroServiceType>(null);
 
-  // Track scroll progress within the hero container
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
   });
 
-  // Smooth spring physics for fluid reverse/forward scroll response
   const smoothProgress = useSpring(scrollYProgress, {
     stiffness: 85,
     damping: 24,
     restDelta: 0.001,
   });
 
-  // Scroll animations for Heading
   const headingY = useTransform(
     smoothProgress,
     [0, 0.5, 1],
@@ -205,7 +198,6 @@ export default function HeroSection() {
     [1, 0.88, 0.7]
   );
 
-  // Scroll animations for Category Boxes
   const categoriesY = useTransform(
     smoothProgress,
     [0, 0.5, 1],
@@ -218,7 +210,6 @@ export default function HeroSection() {
     [1, 0.92, 0.8]
   );
 
-  // Stagger animation container
   const containerVariants: Variants = {
     hidden: {
       opacity: 0,
@@ -251,13 +242,6 @@ export default function HeroSection() {
     },
   };
 
-  /*
-   * Global Search Result Click Handler
-   *
-   * Tries to find the exact product element first.
-   * If an exact product element is not available,
-   * it falls back to the relevant product section.
-   */
   const handleGlobalProductSelect = (product: any) => {
     if (!product) return;
 
@@ -297,7 +281,6 @@ export default function HeroSection() {
       return;
     }
 
-    // Fallback navigation by product type
     let targetSection: HTMLElement | null = null;
 
     if (productType === "laptop") {
@@ -331,12 +314,10 @@ export default function HeroSection() {
       id="hero-scroll-container"
       className="relative w-full min-h-[160vh] bg-transparent tech-heading"
     >
-      {/* Sticky Hero Viewport */}
       <section
         id="hero-section"
         className="sticky top-0 w-full min-h-screen flex items-center justify-center bg-[#020617] overflow-hidden px-4 sm:px-6 md:px-10 lg:px-14 xl:px-20 py-8 sm:py-10 md:py-14"
       >
-        {/* Background Video or Tech Gradient Fallback */}
         <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
           {!videoError ? (
             <video
@@ -361,26 +342,23 @@ export default function HeroSection() {
             </div>
           )}
 
-          {/* Minimal subtle gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#020617]/40 via-transparent to-transparent pointer-events-none" />
         </div>
 
-        {/* Main Content Layout */}
-        <div className="w-full max-w-7xl mx-auto flex flex-col justify-between gap-8 sm:gap-10 md:gap-14 relative z-10">
+        <div className="w-full max-w-7xl mx-auto relative z-10 h-full">
 
-          {/* =====================================================
-              GLOBAL SEARCH BAR
-              Positioned ABOVE FUSION FACTOR
-              ===================================================== */}
-          <div className="w-full flex justify-center px-1 -translate-x-[1%] -translate-y-[4%] scale-[0.99]">
-            <GlobalSearchBar
-              onSelect={handleGlobalProductSelect}
-            />
+          {/* GLOBAL SEARCH BAR
+              Same horizontal width as the main heading area.
+              Positioned at the absolute top of the Hero section. */}
+          <div className="absolute top-0 left-1 right-1 sm:left-0 sm:right-0 flex justify-start">
+            <div className="w-full max-w-[820px]">
+              <GlobalSearchBar
+                onSelect={handleGlobalProductSelect}
+              />
+            </div>
           </div>
 
-          {/* =====================================================
-              MAIN BRAND HEADING: FUSION FACTOR
-              ===================================================== */}
+          {/* MAIN BRAND HEADING */}
           <motion.div
             id="brand-heading-container"
             style={{
@@ -400,7 +378,7 @@ export default function HeroSection() {
               duration: 0.9,
               ease: [0.16, 1, 0.3, 1],
             }}
-            className="w-full flex flex-col items-start select-none px-1"
+            className="w-full flex flex-col items-start select-none px-1 pt-24 sm:pt-28 md:pt-32"
           >
             <div className="overflow-hidden">
               <motion.h1
@@ -453,9 +431,7 @@ export default function HeroSection() {
             </div>
           </motion.div>
 
-          {/* =====================================================
-              LOWER CATEGORIES BAR / GRID
-              ===================================================== */}
+          {/* LOWER CATEGORIES BAR / GRID */}
           <motion.div
             id="categories-container"
             style={{
@@ -465,7 +441,7 @@ export default function HeroSection() {
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="w-full rounded-xl sm:rounded-2xl md:rounded-3xl border border-white/15 bg-slate-950/30 backdrop-blur-[2px] p-2.5 sm:p-3 md:p-4 shadow-xl"
+            className="w-full rounded-xl sm:rounded-2xl md:rounded-3xl border border-white/15 bg-slate-950/30 backdrop-blur-[2px] p-2.5 sm:p-3 md:p-4 shadow-xl absolute bottom-8 left-0"
           >
             <div
               id="categories-grid"
@@ -485,7 +461,6 @@ export default function HeroSection() {
         </div>
       </section>
 
-      {/* Upgrades / Repairs / Parts Hero Service Modal */}
       <HeroServiceModal
         serviceType={activeServiceModal}
         onClose={() => setActiveServiceModal(null)}
