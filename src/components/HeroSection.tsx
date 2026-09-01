@@ -365,8 +365,8 @@ export default function HeroSection() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#020617]/40 via-transparent to-transparent pointer-events-none" />
         </div>
 
-        {/* Small Search Icon — fixed to the top-left of the Hero */}
-        <div className="absolute top-5 left-5 sm:top-6 sm:left-6 z-[100]">
+        {/* Small Search Icon — independent from Hero animation/layout */}
+        <div className="absolute top-4 left-5 sm:top-5 sm:left-6 z-[100]">
           <GlobalSearchBar
             onSelect={handleGlobalProductSelect}
           />
