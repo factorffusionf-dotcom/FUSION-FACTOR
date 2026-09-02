@@ -127,7 +127,7 @@ export default function Footer() {
                 {/* Slogan - Entirely White */}
                 <p className="text-xs sm:text-sm font-semibold tracking-wide flex items-center gap-2">
                   <span className="text-white">
-                    Elevate Your
+                    Evaluate Your
                   </span>
 
                   <span className="text-white">
