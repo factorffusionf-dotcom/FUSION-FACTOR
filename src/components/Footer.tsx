@@ -395,7 +395,7 @@ export default function Footer() {
 
           {/* Bottom Slogan - Entirely White */}
           <div className="flex items-center gap-2 text-xs font-medium">
-            <span className="text-white font-bold">Elevate Your</span>
+            <span className="text-white font-bold">Evaluate Your</span>
             <span className="text-white font-bold">
               Digital Experience
             </span>
