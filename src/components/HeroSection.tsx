@@ -63,17 +63,13 @@ function CategoryCard({ cat, index, variants, onSelectService }: CategoryCardPro
       whileTap={{ scale: 0.96 }}
       className={`cat-box px-2.5 sm:px-3 md:px-4 py-3 sm:py-3.5 md:py-4 cursor-pointer relative overflow-hidden group rounded-lg sm:rounded-xl flex items-center justify-center text-center ${cat.spanClass}`}
     >
-      {/* Interactive Subtle Ethereal Glow - Hardware accelerated */}
       <div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(circle_at_center,rgba(59,130,246,0.32),transparent_70%)]" />
 
-      {/* Gentle Luminous Shimmer Light Sweep */}
       <div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-300/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
-        {/* Soft luminous inner border accent */}
         <div className="absolute inset-0 border border-blue-400/30 rounded-lg sm:rounded-xl pointer-events-none" />
       </div>
 
-      {/* Category Title - Centered & layered safely above effects for 100% clarity */}
       <motion.h2
         id={`category-text-${cat.name.toLowerCase()}`}
         initial={{ opacity: 0 }}
@@ -163,7 +159,7 @@ export default function HeroSection() {
               className="w-full h-full object-cover object-center"
             >
               <source
-                src="https://res.cloudinary.com/r29xgigl/video/upload/v1787613449/Laptop_disassembly_and_reconstru__202608241617.mp4"
+                src="https://res.cloudinary.com/zpvhhn3s/video/upload/v1794431304/evaluate_your_digital_experience.mp4"
                 type="video/mp4"
               />
             </video>
@@ -173,14 +169,15 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_80%,rgba(6,182,212,0.12),transparent_50%)]" />
             </div>
           )}
-          {/* Minimal subtle gradient overlay to keep video sharp, vibrant, and fully visible */}
+
+          {/* Minimal subtle gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#020617]/40 via-transparent to-transparent pointer-events-none" />
         </div>
 
-        {/* Main Content Layout Structured Like Reference Image */}
+        {/* Main Content Layout */}
         <div className="w-full max-w-7xl mx-auto flex flex-col justify-between gap-8 sm:gap-10 md:gap-14 relative z-10">
-          
-          {/* Main Brand Heading: FUSION FACTOR (Directly on video background) */}
+
+          {/* Main Brand Heading */}
           <motion.div
             id="brand-heading-container"
             style={{
@@ -213,7 +210,7 @@ export default function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1], delay: 0.22 }}
                 whileHover={{ scale: 1.01 }}
-className="text-[90px] xs:text-[90px] sm:text-[90px] md:text-[92px] lg:text-[123px] xl:text-[134.4px] font-black uppercase factor-split factor-outline leading-[0.82] tracking-tighter"
+                className="text-[90px] xs:text-[90px] sm:text-[90px] md:text-[92px] lg:text-[123px] xl:text-[134.4px] font-black uppercase factor-split factor-outline leading-[0.82] tracking-tighter"
               >
                 FACTOR
               </motion.h1>
